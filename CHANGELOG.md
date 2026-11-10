@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Project homepage: banner, social preview, how-it-works diagram and real terminal screenshots in `docs/images/`.
 - Japanese README (`README.ja.md`); English / 简体中文 / 日本語 language switcher in all READMEs.
+- Docs: README translations in Spanish, Portuguese (Brazil), French, German, Korean and Russian.
 
 ## [0.1.0] - 2026-11-10
 
