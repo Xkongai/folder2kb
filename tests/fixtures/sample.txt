@@ -1,0 +1,6 @@
+Acme Store shipping FAQ
+
+Orders placed before 3 pm ship the same day. Standard shipping takes 3 to 5 business days.
+Express shipping is available in major cities and arrives the next day.
+
+发货说明：下午三点前下单当天发货，普通快递 3 到 5 个工作日送达，主要城市支持次日达。

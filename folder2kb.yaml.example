@@ -1,0 +1,13 @@
+# folder2kb configuration (copy to folder2kb.yaml or run `folder2kb init`)
+
+# Where the local knowledge base is stored (relative to this file).
+kb_dir: .kb
+
+# Max characters per chunk.
+chunk_size: 500
+
+# Characters shared between neighbouring chunks.
+chunk_overlap: 80
+
+# Number of results returned by `folder2kb ask`.
+top_k: 5

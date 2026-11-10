@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest an idea for folder2kb
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: What are you trying to do, and why is it hard today?
+      placeholder: I keep my notes as .docx files and want to search them...
+    validations:
+      required: true
+  - type: textarea
+    id: expected_command
+    attributes:
+      label: Expected command / behaviour
+      description: How would you like to use it from the CLI?
+      render: shell
+      placeholder: folder2kb import ./notes --include "*.docx"
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "folder2kb"
+version = "0.1.0"
+description = "One command turns any folder of documents into a local, queryable knowledge base."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Xkongai" }]
+keywords = ["knowledge-base", "bm25", "search", "cli", "offline", "chinese", "rag"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Text Processing :: Indexing",
+]
+dependencies = [
+  "typer>=0.12",
+  "pymupdf>=1.24",
+  "rank-bm25>=0.2",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+folder2kb = "folder2kb.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/Xkongai/folder2kb"
+Issues = "https://github.com/Xkongai/folder2kb/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/folder2kb"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
